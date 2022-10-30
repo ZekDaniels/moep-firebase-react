@@ -7,7 +7,7 @@ const TutorialsList = () => {
   // const [tutorials, setTutorials] = useState([]);
   const [currentTutorial, setCurrentTutorial] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(-1);
-
+  // console.log(TutorialDataService);
   /* use react-firebase-hooks */
   const [tutorials, loading, error] = useCollection(TutorialDataService.getAll().orderBy("title", "asc"));
 
